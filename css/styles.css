@@ -305,11 +305,11 @@ display: flex;
     margin-left: 30px;
     background-color: var(--hero-text-color);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .list .social-links-list {
     display: inline-flex;
-    margin-bottom: 30px;
 }
 
 .social-icons-link {
@@ -346,16 +346,17 @@ display: flex;
     font-size: 16px;
     line-height: 1.19;
     color: var(--header-color);
-    margin-top: 30px;
-    margin-bottom: 10px;
   }
 
 .member-position {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    margin-bottom: 30px;
     }
+
+.team-text-tomb {
+    padding: 30px 32px;
+}
 
 .our-clients {
     text-align: center;
@@ -368,6 +369,7 @@ font-weight: 700 ;
 font-size: 36px;
 line-height: 1.14;
 color:var(--header-color);
+margin-bottom: 50px;
 }
 
 .clients-list {
@@ -493,6 +495,8 @@ padding: 6px 22px;
     color: var(--hero-text-color);
     cursor: pointer;
 }
+
+
 .portpholio-list-titel {
     font-weight: 700;
     font-size: 18px;
@@ -540,8 +544,18 @@ padding: 6px 22px;
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    border-bottom: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
+
 }
+
+.card-item:hover,
+.card-item:focus {
+    box-shadow: 0px 1px 1px 
+    rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .card-text {
     padding: 20px 24px;
 }
